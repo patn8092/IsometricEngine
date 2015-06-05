@@ -22,6 +22,9 @@ public class Isometric extends JPanel {
 	private BufferedImage tileImage;
 	private int[][] tiles;
 	
+	/**
+	 * Instantiates the Isometric class. 
+	 */
 	public Isometric() {
 		try {
 			tileImage = ImageIO.read(getClass().getResource("/tile.png"));
@@ -48,6 +51,14 @@ public class Isometric extends JPanel {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param p - A point containing the indices of <code>(x,y)</code> 
+	 * 			in the <b>map array</b>.  
+	 * 
+	 * @return A point containing the absolute coordinates 
+	 * 			on the screen converted from parameter <b>p</b>
+	 */
 	public Point mapToScreen(Point p) {
 		return new Point(
 					(p.x - p.y) * TILE_WIDTH_HALF ,
