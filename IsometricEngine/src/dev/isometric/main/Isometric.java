@@ -12,10 +12,10 @@ import javax.swing.JPanel;
 public class Isometric extends JPanel {
 
 	private static final long serialVersionUID = 1L;
-	public static final int WIDTH = 320,
+	public static final int WIDTH = 640,
 			HEIGHT = (WIDTH * 9) / 12;
-	public static int TILE_WIDTH = 24,
-			TILE_HEIGHT = 12,
+	public static int TILE_WIDTH = 32,
+			TILE_HEIGHT = 16,
 			TILE_WIDTH_HALF = TILE_WIDTH / 2,
 			TILE_HEIGHT_HALF = TILE_HEIGHT / 2;
 	
